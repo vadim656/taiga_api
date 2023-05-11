@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sdfs",
+  "info": {
+    "singularName": "sdf",
+    "pluralName": "sdfs",
+    "displayName": "sdf"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ffff": {
+      "type": "string"
+    }
+  }
+}

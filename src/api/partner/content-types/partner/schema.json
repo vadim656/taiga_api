@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partner"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FIO": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true
+    },
+    "UID": {
+      "type": "uid",
+      "targetField": "FIO"
+    }
+  }
+}
