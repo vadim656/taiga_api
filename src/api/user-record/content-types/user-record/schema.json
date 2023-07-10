@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_records",
+  "info": {
+    "singularName": "user-record",
+    "pluralName": "user-records",
+    "displayName": "UserRecord",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Time": {
+      "type": "datetime"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "tovary_i_uslugis": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "user_records"
+    },
+    "Note": {
+      "type": "richtext"
+    },
+    "FIO": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "crm_cabinet": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::crm-cabinet.crm-cabinet",
+      "inversedBy": "user_records"
+    },
+    "TimeEnd": {
+      "type": "datetime"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_records"
+    },
+    "Status": {
+      "type": "string"
+    }
+  }
+}

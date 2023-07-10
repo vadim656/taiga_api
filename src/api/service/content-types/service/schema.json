@@ -19,13 +19,19 @@
       "type": "float",
       "default": 1
     },
-    "UID": {
+    "ART": {
       "type": "uid",
       "targetField": "Name"
     },
     "Active": {
       "type": "boolean",
       "default": true
+    },
+    "ProductAmount": {
+      "displayName": "ProductAmount",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-amount.product-amount"
     }
   }
 }

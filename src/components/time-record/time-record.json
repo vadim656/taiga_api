@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_time_record_time_records",
+  "info": {
+    "displayName": "TimeRecord",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "string"
+    },
+    "user_records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-record.user-record"
+    },
+    "DayCabinet": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crm_times",
+  "info": {
+    "singularName": "crm-time",
+    "pluralName": "crm-times",
+    "displayName": "CRM_Time"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Value": {
+      "type": "string"
+    }
+  }
+}

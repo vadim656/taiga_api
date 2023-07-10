@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_coming_i_product_coming_i_products",
+  "info": {
+    "displayName": "ComingIProduct"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "Value": {
+      "type": "integer"
+    }
+  }
+}

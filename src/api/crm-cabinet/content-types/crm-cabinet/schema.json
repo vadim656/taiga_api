@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crm_cabinets",
+  "info": {
+    "singularName": "crm-cabinet",
+    "pluralName": "crm-cabinets",
+    "displayName": "CRM_Cabinet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "user_records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-record.user-record",
+      "mappedBy": "crm_cabinet"
+    },
+    "Time": {
+      "displayName": "TimeRecord",
+      "type": "component",
+      "repeatable": true,
+      "component": "time-record.time-record"
+    }
+  }
+}

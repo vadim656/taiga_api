@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ed_eds",
+  "info": {
+    "displayName": "Ed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "Val": {
+      "type": "integer"
+    }
+  }
+}

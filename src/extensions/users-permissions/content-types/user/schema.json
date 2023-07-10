@@ -85,6 +85,37 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::user-status.user-status"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "user"
+    },
+    "Bonus": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "user_notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-note.user-note",
+      "mappedBy": "users_permissions_user"
+    },
+    "UID_SKLAD": {
+      "type": "uid"
+    },
+    "DateRozhdenia": {
+      "type": "datetime"
+    },
+    "user_records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-record.user-record",
+      "mappedBy": "users_permissions_user"
+    },
+    "Speciality": {
+      "type": "string"
     }
   }
 }

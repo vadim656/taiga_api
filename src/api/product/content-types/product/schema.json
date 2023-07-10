@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Товары и услуги",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Rating": {
+      "type": "integer"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Ostatki": {
+      "type": "decimal"
+    },
+    "ART": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "Active": {
+      "type": "boolean",
+      "default": true
+    },
+    "purchasePrice": {
+      "type": "decimal"
+    },
+    "Unit": {
+      "type": "enumeration",
+      "enum": [
+        "Штука",
+        "Миллилитр",
+        "Грамм",
+        "Минута"
+      ],
+      "default": "Штука",
+      "required": true
+    },
+    "UnitValue": {
+      "type": "biginteger"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group.group",
+      "inversedBy": "products"
+    },
+    "Type": {
+      "type": "boolean"
+    },
+    "Pram": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-amount.product-amount"
+    },
+    "Desc": {
+      "type": "richtext"
+    },
+    "Programm": {
+      "displayName": "Programm",
+      "type": "component",
+      "repeatable": true,
+      "component": "programm.programm"
+    },
+    "ComponentsProgramm": {
+      "displayName": "ComponentsProgramm",
+      "type": "component",
+      "repeatable": true,
+      "component": "components-programm.components-programm"
+    },
+    "user_records": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::user-record.user-record",
+      "mappedBy": "tovary_i_uslugis"
+    },
+    "sertActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "Cabinet": {
+      "type": "json"
+    }
+  }
+}

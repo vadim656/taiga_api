@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_programm_components_programms",
+  "info": {
+    "displayName": "ComponentsProgramm",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

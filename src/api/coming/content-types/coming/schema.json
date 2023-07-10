@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comings",
+  "info": {
+    "singularName": "coming",
+    "pluralName": "comings",
+    "displayName": "Coming",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ComingIProduct": {
+      "displayName": "ComingIProduct",
+      "type": "component",
+      "repeatable": true,
+      "component": "coming-i-product.coming-i-product"
+    },
+    "Desc": {
+      "type": "richtext"
+    }
+  }
+}
