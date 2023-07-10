@@ -95,9 +95,6 @@
     "sertActive": {
       "type": "boolean",
       "default": false
-    },
-    "Cabinet": {
-      "type": "json"
     }
   }
 }
